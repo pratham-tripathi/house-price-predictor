@@ -27,7 +27,7 @@ This project implements an end-to-end Machine Learning lifecycle:
  * Analyze: Click the "Calculate Valuation" button.
  * Result: The AI will display the estimated market value based on its learned patterns.
 
-##👨‍💻 Submission Details
+## 👨‍💻 Submission Details
  * Developer: Pratham Tripathi
  * Course: Foundation of AI Technology
  * Batch: AT-01
