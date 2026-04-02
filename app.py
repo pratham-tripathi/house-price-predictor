@@ -22,17 +22,14 @@ def predict(Area, Bedrooms, Bathrooms, Floors, YearBuilt, Location, Condition, G
     try:
         prediction = model.predict(input_df)[0]
         # Professional formatting for the output
-        return f"Estimated Market Value: ${max(0, prediction):,.2f}"
+        return f"Estimated Market Value: ₹{max(0, prediction)*93:,.2f}"
     except Exception as e:
         return f"Error: {str(e)}"
 
 # --- CUSTOM UI DESIGN ---
 # Using a professional "Soft" theme with emerald colors
-theme = gr.themes.Soft(
-    primary_hue="emerald",
-    secondary_hue="slate",
-    neutral_hue="slate",
-    font=[gr.themes.GoogleFont("Poppins"), "ui-sans-serif", "sans-serif"]
+theme = gr.themes.Glass(
+    font=[gr.themes.GoogleFont("Orbitron"), "ui-sans-serif", "sans-serif"]
 )
 
 with gr.Blocks(theme=theme) as demo:
